@@ -10,8 +10,8 @@ The process basically involved:
  - Finding the latest version that made a change that wasn't in the shared object
  - Finding the earliest version that made a change that was in the shared object
 
-From that, I narrowed the range down to \[4149992, d151ba0).
-During this range I decided to pick commit 463f5cc, since it's the latest version with
+With that, I narrowed the range down to \[[`4149992`](https://github.com/libsdl-org/SDL-historical-archive/commit/4149992ac26e739dd843f78a5a7bbe2dc5bcca71), [`d151ba0`](https://github.com/libsdl-org/SDL-historical-archive/commit/d151ba09266de92d2a4f631c86441d637f853e9e)).
+From this range I decided to pick commit [`463f5cc`](https://github.com/libsdl-org/SDL-historical-archive/commit/463f5cc58c31df0e0ff3f31e82d9fbb34d1a4064), since it's the latest version with
 changes that I can't tell from the version shipped in the game.
 
 There are some other "tells" in between those but, unfortunately, Ghidra wouldn't

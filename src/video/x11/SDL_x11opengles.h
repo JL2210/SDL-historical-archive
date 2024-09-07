@@ -24,8 +24,13 @@
 #define _SDL_x11opengles_h
 
 #if SDL_VIDEO_OPENGL_ES || SDL_VIDEO_OPENGL_ES2
+#if SDL_VIDEO_OPENGL_ES
 #include <GLES/gl.h>
 #include <GLES/egl.h>
+#else
+#include <GLES2/gl2.h>
+#include <EGL/egl.h>
+#endif
 #include <dlfcn.h>
 #if defined(__OpenBSD__) && !defined(__ELF__)
 #define dlsym(x,y) dlsym(x, "_" y)

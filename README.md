@@ -25,7 +25,7 @@ This causes pretty major issues, like the mouse not working at all in-game.
 
 This version of SDL2 doesn't have Wayland support, so unfortunately you'll still
 have to use X11 to play. Going to work on bisecting which exact commit broke the
-mouse, but that will take time.
+mouse, but that will take time. Edit: first bad commit is [`9707138`](https://github.com/libsdl-org/SDL-historical-archive/commit/9707138ff7ba19217d00fb03d7e9c1d9ac77dcf0)
 After that, hopefully I'll be able to make a patch to use a modern version of SDL2
 with the game.
 

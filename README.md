@@ -47,3 +47,10 @@ To use, set your launch options as this in Steam (this creates a log file in you
 ```
 LD_PRELOAD=/opt/ds-sdl/lib32/libSDL2-2.0.so.0 SDL_VIDEODRIVER=x11 %command% > ~/dont_starve.log 2>&1
 ```
+
+Alternatively, use [this patch](0001-Binary-compatibility-for-pre-2.0.0-versions-of-SDL2.patch) on any (moderately)
+recent version of the SDL source tree on the SDL2 branch. You can use the same install and use instructions as above,
+with a few minor modifications:
+
+- remove `--disable-input-tslib` from the configure line
+- remove `SDL_VIDEODRIVER=x11` from Steam launch options (or replace `x11` with `wayland`)
